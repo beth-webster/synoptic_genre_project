@@ -3,3 +3,5 @@
 Genre_Application_Report.csv
 *.pkl
 *.venv
+api_genre_data.csv
+__pycache__
