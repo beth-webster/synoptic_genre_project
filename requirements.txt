@@ -1,3 +1,4 @@
 pandas
 apple-music-python
 scikit-learn
+pytest
