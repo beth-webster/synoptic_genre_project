@@ -5,8 +5,7 @@ def existing_artist_genres(dd_singles):
     dd_singles = pd.read_csv(dd_singles, encoding='unicode_escape')
     
     # Drop rows with OOD genres
-    mask_rockpop = dd_singles[' Genre'] != 'Rock/Pop (pre 2004)'
-    dd_singles = dd_singles[mask_rockpop].copy()    
+    dd_singles = dd_singles[' Genre'] != 'Rock/Pop (pre 2004)'  
     
     # Extract primary artist from the ARTIST column using regex    
     dd_singles['Primary_artist'] = dd_singles[' Artist'].str.extract(r'^([^/&]+)(?:[/&]| FT )')
